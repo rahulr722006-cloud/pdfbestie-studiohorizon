@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PDF Bestie | Your everyday PDF companion</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7229076719505605"
+     crossorigin="anonymous"></script>    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/4.0.379/pdf.min.js"></script>
+    <script>
+        // Tell pdf.js where to find the worker file
+        pdfjsLib.GlobalWorkerOptions.workerSrc = 'https://cdnjs.cloudflare.com/ajax/libs/pdf.js/4.0.379/pdf.worker.min.js';
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/pdf-lib/dist/pdf-lib.min.js"></script>
+</head>
+<body>
+
+    <header id="navbar">
+        <div class="container nav-content">
+            <a href="#hero" class="brand-logo">
+                <i class="fas fa-file-pdf"></i> PDF Bestie by studiohorizon
+            </a>
+            <nav>
+                <a href="#hero">Home</a>
+                <a href="#tools-overview">Tools</a>
+                <a href="#privacy-details">Privacy</a>
+                <a href="#contact-us">Contact</a>
+            </nav>
+            <button class="menu-toggle" aria-label="Toggle navigation menu">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <section id="hero" class="hero-section">
+            <div class="container">
+                <h1 class="hero-title">Your everyday PDF companion — <br>fast, friendly, and private.</h1>
+                <p class="hero-subtitle">PDF Bestie is a fully client-side utility suite for all your PDF needs.</p>
+                <a href="#tools-overview" class="cta-button smooth-scroll">Start Editing <i class="fas fa-arrow-down"></i></a>
+            </div>
+            <div class="privacy-banner">
+                <i class="fas fa-lock"></i>
+                <span class="privacy-message">Your PDFs stay on your device. **Nothing is uploaded.**</span>
+            </div>
+        </section>
+
+        <section id="tools-overview" class="section-padding">
+            <div class="container">
+                <h2 class="section-title">✨ Core PDF Tools</h2>
+                <!-- Google AdSense Display Banner -->
+<div class="my-6 flex justify-center">
+  <ins class="adsbygoogle"
+       style="display:block"
+       data-ad-client="ca-pub-7229076719505605"
+       data-ad-slot="4079327293"
+       data-ad-format="auto"
+       data-full-width-responsive="true"></ins>
+</div>
+<script>
+  (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+                <div class="tools-grid">
+                    <div class="tool-card" data-tool="merge">
+                        <i class="fas fa-object-group tool-icon"></i>
+                        <h3>Merge PDFs</h3>
+                        <p>Combine multiple PDF files into one single document.</p>
+                    </div>
+                    <div class="tool-card" data-tool="split">
+                        <i class="fas fa-cut tool-icon"></i>
+                        <h3>Split PDF</h3>
+                        <p>Divide a PDF into separate files by page range or every page.</p>
+                    </div>
+                    <div class="tool-card" data-tool="reorder">
+                        <i class="fas fa-arrows-up-down-left-right tool-icon"></i>
+                        <h3>Reorder Pages</h3>
+                        <p>Visually drag & drop to rearrange your document pages.</p>
+                    </div>
+                    <div class="tool-card" data-tool="rotate">
+                        <i class="fas fa-rotate tool-icon"></i>
+                        <h3>Rotate Pages</h3>
+                        <p>Rotate selected pages by 90°, 180°, or 270°.</p>
+                    </div>
+                    <div class="tool-card" data-tool="delete">
+                        <i class="fas fa-trash-can tool-icon"></i>
+                        <h3>Delete Pages</h3>
+                        <p>Easily remove unwanted pages from your PDF.</p>
+                    </div>
+                    <div class="tool-card" data-tool="extract">
+                        <i class="fas fa-file-export tool-icon"></i>
+                        <h3>Extract Pages</h3>
+                        <p>Pull out selected pages to create a brand new PDF.</p>
+                    </div>
+                    <div class="tool-card" data-tool="img-to-pdf">
+                        <i class="fas fa-image tool-icon"></i>
+                        <h3>Images → PDF</h3>
+                        <p>Convert multiple JPG, PNG, or HEIC images into a PDF.</p>
+                    </div>
+                    <div class="tool-card" data-tool="watermark">
+                        <i class="fas fa-water tool-icon"></i>
+                        <h3>Add Watermark</h3>
+                        <p>Apply a custom text watermark with opacity control.</p>
+                    </div>
+                    <div class="tool-card" data-tool="page-numbers">
+                        <i class="fas fa-list-ol tool-icon"></i>
+                        <h3>Page Numbers</h3>
+                        <p>Insert sequential page numbers at a custom position.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="tool-workspace" class="tool-workspace hidden">
+            <div class="workspace-header">
+                <h2 id="workspace-title">Tool Name</h2>
+                <button id="close-workspace" class="action-button close-button" title="Close Workspace"><i class="fas fa-xmark"></i></button>
+            </div>
+
+            <div id="upload-area" class="upload-area">
+                <i class="fas fa-cloud-arrow-up upload-icon"></i>
+                <p>Drag & Drop your PDF files here, or</p>
+                <button id="file-input-trigger" class="cta-button">Select Files</button>
+                <input type="file" id="file-input" accept=".pdf, .jpg, .jpeg, .png, .heic" multiple hidden>
+                <p class="upload-note" id="upload-note">Supports .pdf files. For Images → PDF, supports .jpg, .png, .heic.</p>
+            </div>
+
+            <div id="editor-area" class="editor-area hidden">
+                <div class="editor-sidebar">
+                    <div id="tool-controls">
+                        <div id="split-controls" class="control-group hidden">
+                            <label for="split-range">Split Range (e.g., 1-5, 8, 10-END)</label>
+                            <input type="text" id="split-range" placeholder="e.g., 1-5, 8, 10-END">
+                        </div>
+                        <div id="rotate-controls" class="control-group hidden">
+                            <label for="rotate-degree">Rotate By:</label>
+                            <select id="rotate-degree">
+                                <option value="90">90° Clockwise</option>
+                                <option value="180">180°</option>
+                                <option value="270">90° Counter-Clockwise</option>
+                            </select>
+                            <p class="control-tip">Select pages below, then click **Apply**.</p>
+                        </div>
+                        <div id="watermark-controls" class="control-group hidden">
+                            <label for="watermark-text">Watermark Text</label>
+                            <input type="text" id="watermark-text" value="PDF Bestie - Private" maxlength="50">
+                            <label for="watermark-opacity">Opacity: <span id="opacity-value">30%</span></label>
+                            <input type="range" id="watermark-opacity" min="0.05" max="0.5" step="0.01" value="0.3">
+                            <label for="watermark-size">Size: <span id="size-value">40</span></label>
+                            <input type="range" id="watermark-size" min="10" max="100" step="1" value="40">
+                        </div>
+                        <div id="page-num-controls" class="control-group hidden">
+                            <label for="page-num-pos">Position:</label>
+                            <select id="page-num-pos">
+                                <option value="bottom-center">Bottom Center</option>
+                                <option value="bottom-left">Bottom Left</option>
+                                <option value="bottom-right">Bottom Right</option>
+                            </select>
+                            <p class="control-tip">Numbers will be added to all pages.</p>
+                        </div>
+                        <div id="utility-buttons" class="control-group hidden">
+                            <button id="delete-selected" class="action-button"><i class="fas fa-trash-can"></i> Delete Selected</button>
+                            <button id="extract-selected" class="action-button"><i class="fas fa-file-export"></i> Extract Selected</button>
+                        </div>
+                    </div>
+                    <button id="process-pdf-btn" class="cta-button full-width" disabled>
+                        <i class="fas fa-rocket"></i> Start Processing
+                    </button>
+                </div>
+
+                <div class="editor-content">
+                    <p class="file-count-label" id="file-count-label"></p>
+                    <div id="thumbnails-container" class="thumbnails-container">
+                        </div>
+                </div>
+            </div>
+
+            <div id="download-area" class="download-area hidden">
+                <i class="fas fa-circle-check success-icon"></i>
+                <h3 id="result-message">Your PDF is ready!</h3>
+                <button id="download-pdf-btn" class="cta-button large-button">
+                    <i class="fas fa-download"></i> Download Result
+                </button>
+                <button id="new-task-btn" class="action-button">
+                    <i class="fas fa-plus"></i> Start New Task
+                </button>
+            </div>
+        </section>
+
+        <section id="privacy-details" class="section-padding">
+            <div class="container">
+                <h2 class="section-title">🔒 Privacy First Processing</h2>
+                <div class="privacy-box">
+                    <p class="privacy-statement">
+                        <i class="fas fa-shield-halved"></i>
+                        **Everything processed locally on your device.**
+                    </p>
+                    <p>PDF Bestie is a **100% client-side** application. This means all your document merging, splitting, and editing operations happen right in your web browser using JavaScript.</p>
+                    <p>
+                        <i class="fas fa-server"></i>
+                        **No Server Uploads, Logs, or Tracking of Documents.**
+                    </p>
+                    <p>Your sensitive documents are never transmitted to our servers. We never see, store, or log the contents of your PDFs. Once you close the tab, the temporary data is gone.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact-us" class="section-padding">
+            <div class="container">
+                <h2 class="section-title">📧 Get in Touch</h2>
+                <div class="contact-box">
+                    <p>Have questions, feedback, or need support? We'd love to hear from you!</p>
+                    <p class="contact-email">
+                        <i class="fas fa-envelope"></i> Email: <a href="mailto:horizonstudio.contactus@gmail.com">horizonstudio.contactus@gmail.com</a>
+                    </p>
+                    <div class="social-icons">
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="Twitter/X"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="legal-footer" class="section-padding legal-section">
+            <div class="container legal-content">
+                <div class="legal-item">
+                    <h3>Privacy Policy</h3>
+                    <p>We respect your privacy. All processing is done locally on your device. We do not collect, store, or transmit your files. This website may use basic cookies for functionality (e.g., dark mode preference) but none for tracking.</p>
+                </div>
+                <div class="legal-item">
+                    <h3>Terms of Service</h3>
+                    <p>By using PDF Bestie, you agree that all document processing is performed in your local browser environment and is your sole responsibility. We provide this tool "as is" without warranty. We are not responsible for data loss. Use at your own risk.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            &copy; 2025 PDF Bestie | Studio Horizon. All Rights Reserved.
+        </div>
+    </footer>
+  <script src="main.js"></script>
+</body>
+</html>
